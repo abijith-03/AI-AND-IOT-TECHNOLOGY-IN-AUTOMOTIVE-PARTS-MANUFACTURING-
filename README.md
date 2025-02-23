@@ -20,6 +20,6 @@ Refer to the **repo structure** for file organization.
 
 ## 📖 Installation
 ```bash
-git clone https://github.com/yourusername/AI-Automotive-Parts-Manufacturing.git
+git clone https://github.com/abijith-03/AI-Automotive-Parts-Manufacturing.git
 cd AI-Automotive-Parts-Manufacturing
 pip install -r requirements.txt
