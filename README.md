@@ -9,11 +9,21 @@ This project integrates **AI** into the automotive parts manufacturing industry.
 ✅ **Power BI dashboard** for real-time visualization  
 ✅ **Optimized inventory management**  
 
-## 🛠️ Tech Stack
-- Python 🐍
-- TensorFlow / PyTorch 🔥
-- OpenCV 🎥
-- Power BI 📊
+## 🛠 Tech Stack
+**Python
+Streamlit (Web UI)
+Pandas (Data Processing)
+Plotly (Visualization)
+Scikit-learn (Machine Learning)
+SQLite / MySQL (Database)** 
+
+## 📊 How It Works
+Upload a dataset **(upload.py)**
+Clean the data **(handle missing values in cleaning.py)**
+Perform EDA **(select charts and analyze data in analysis5.py)**
+Train a Machine Learning model **(ml6.py)**
+Evaluate results & visualize performance **(results.py)**
+
 
 ## 📂 Directory Structure
 Refer to the **repo structure** for file organization.
