@@ -33,3 +33,8 @@ Refer to the **repo structure** for file organization.
 git clone https://github.com/abijith-03/AI-Automotive-Parts-Manufacturing.git
 cd AI-Automotive-Parts-Manufacturing
 pip install -r requirements.txt
+
+
+## RUN COMMAND
+```bash
+streamlit run app.py
