@@ -24,6 +24,9 @@ Perform EDA **(select charts and analyze data in analysis5.py)**
 Train a Machine Learning model **(ml6.py)**
 Evaluate results & visualize performance **(results.py)**
 
+## RUN COMMAND
+streamlit run app.py
+
 
 ## 📂 Directory Structure
 Refer to the **repo structure** for file organization.
@@ -35,6 +38,4 @@ cd AI-Automotive-Parts-Manufacturing
 pip install -r requirements.txt
 
 
-## RUN COMMAND
-```bash
-streamlit run app.py
+
