@@ -1,11 +1,15 @@
 import streamlit as st
 import sqlite3  # Change this if using MySQL or PostgreSQL
+import os
+import importlib.util
 
 # Connect to Database
 def get_db_connection():
     conn = sqlite3.connect("database.db")
     conn.row_factory = sqlite3.Row
     return conn
+
+# Streamlit Config
 st.set_page_config(page_title="AI in Automotive Industry", layout="wide")
 st.sidebar.title("Navigation")
 
@@ -20,6 +24,15 @@ pages = {
 
 page = st.sidebar.radio("Go to", list(pages.keys()))
 
+# Function to Import and Run Selected Page
+def load_page(page_file):
+    if os.path.exists(page_file):
+        spec = importlib.util.spec_from_file_location("page_module", page_file)
+        module = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(module)
+    else:
+        st.error(f"⚠️ Error: `{page_file}` not found! Please check the file path.")
+
 # Run Selected Page
 if page in pages:
-    exec(open(pages[page]).read())
+    load_page(pages[page])
